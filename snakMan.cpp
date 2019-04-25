@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
+#include "intro.h"
 using namespace std;
 bool gameOver;
 const int width = 40;
@@ -33,7 +34,6 @@ void Draw()
     for (int i = 0; i < width + 2; i++)
         cout << "-";
     cout << endl;
-
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
@@ -152,9 +152,9 @@ void Logic()
     }
 }
 
-
 int main()
 {
+    intro();
     Setup();
     while (!gameOver)
     {
