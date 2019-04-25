@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <windows.h>
 #include "intro.h"
+#include "endGame.h"
 using namespace std;
 bool gameOver;
 const int width = 40;
@@ -163,5 +164,6 @@ int main()
         Logic();
         Sleep(10);
     }
+    end();
     return 0;
 }
